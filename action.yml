@@ -1,4 +1,4 @@
-name: Upload Test Labels
+name: upload-test-labels
 author: Data
 description: Parse test labels in a project and upload them to S3 to be ingested to the data warehouse
 
