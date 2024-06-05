@@ -1,0 +1,11 @@
+name: Test upload-test-labels-action
+on: 
+  workflow_dispatch:
+  
+jobs:
+  test-action:
+    name: Test upload-test-labels-action
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
