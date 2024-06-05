@@ -17,14 +17,14 @@ runs:
       uses: actions/checkout@v4
         
     - name: Restore NuGet Packages
-      run: nuget restore TestLabelReporting.sln
+      run: nuget restore src/TestLabelReporting/TestLabelReporting.sln
       shell: pwsh
 
     # - name: Add msbuild to PATH
       # uses: microsoft/setup-msbuild@v2
           
     - name: Build Test Label Export Utility
-      run: msbuild TestLabelReporting.sln /p:Configuration="Production" /p:OutputPath="\bin\artifacts"
+      run: msbuild src/TestLabelReporting/TestLabelReporting.sln /p:Configuration="Production" /p:OutputPath="\bin\artifacts"
       shell: pwsh
 
     - name: Run Test Label Export Utility
