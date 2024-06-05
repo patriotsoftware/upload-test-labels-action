@@ -24,7 +24,7 @@ runs:
       # uses: microsoft/setup-msbuild@v2
           
     - name: Build Test Label Export Utility
-      run: msbuild ${{ github.action_path }}/src/TestLabelReporting/TestLabelReporting.sln /p:Configuration="Production" /p:OutputPath="\bin\artifacts"
+      run: msbuild ${{ github.action_path }}/src/TestLabelReporting/TestLabelReporting.sln /p:OutputPath="\bin\artifacts"
       shell: pwsh
 
     - name: Run Test Label Export Utility
